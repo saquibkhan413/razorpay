@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[alt="company"] {
+    position: absolute;
+    animation-name: compimage;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes compimage {
+    0% {
+        top: 0;
+    }
+   
+    100% {
+        top: -160%;
+    }
+}
